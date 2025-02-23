@@ -1,10 +1,10 @@
 # Hugo build artifacts
-/public/
-/resources/
+public/
+resources/
 hugo_stats.json
 
 # Local environment files
-/.hugo_build.lock
+.hugo_build.lock
 
 # Logs and temporary files
 *.log
@@ -12,9 +12,9 @@ hugo_stats.json
 Thumbs.db
 
 # Hugo module cache
-/go.mod
-/go.sum
-/modules.txt
+go.mod
+go.sum
+modules.txt
 
 # Node dependencies (if using npm or yarn)
 node_modules/
