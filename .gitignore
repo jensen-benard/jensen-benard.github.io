@@ -10,6 +10,7 @@ hugo_stats.json
 *.log
 .DS_Store
 Thumbs.db
+*.report.html
 
 # Hugo module cache
 go.mod
