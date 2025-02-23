@@ -1,0 +1,32 @@
+# Hugo build artifacts
+/public/
+/resources/
+hugo_stats.json
+
+# Local environment files
+/.hugo_build.lock
+
+# Logs and temporary files
+*.log
+.DS_Store
+Thumbs.db
+
+# Hugo module cache
+/go.mod
+/go.sum
+/modules.txt
+
+# Node dependencies (if using npm or yarn)
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Python virtual environment (if using Python scripts)
+venv/
+__pycache__/
+
+# GitHub Actions or other CI/CD-specific files (if generated)
+*.bak
+*.swp
+
