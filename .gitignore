@@ -1,6 +1,6 @@
 # Hugo build artifacts
-**/public/
-**/resources/
+public/
+resources/
 hugo_stats.json
 
 # Local environment files
@@ -30,4 +30,7 @@ __pycache__/
 # GitHub Actions or other CI/CD-specific files (if generated)
 *.bak
 *.swp
+
+# Vscode
+.vscode/
 
