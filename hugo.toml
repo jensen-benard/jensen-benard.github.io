@@ -1,4 +1,23 @@
 baseURL = 'https://jensen-benard.github.io/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
-theme = 'ananke'
+title = 'Portfolio'
+theme = 'triple-hyde'
+
+[params]
+
+[params.social]
+	linkedin = "jensen-benard-42a18321a"
+	github = "jensen-benard"
+    email = "jensen.benard@protonmail.com"
+
+[[menu.main]]
+    name = "About Me"
+    identifier = "about me"
+    weight = 100
+    url = "/about-me/"
+
+[[menu.main]]
+    name = "Projects"
+    identifier = "projects"
+    weight = 200
+    url = "/projects/"
