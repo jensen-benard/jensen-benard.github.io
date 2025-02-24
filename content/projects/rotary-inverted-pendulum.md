@@ -20,7 +20,7 @@ We were given a state-space model of the system and used the linear quadratic re
 However, despite eventually finding suitable gains as a group, I felt I didn't understand the theory enough to be able to apply it to a real-world system by myself. So, I decided to create a prototype that would allow me to do just that. I felt a rotary (rather than linear) inverted pendulum would be mechanically simpler and take up less space. However, the mathematics is more complicated due to a greater number of non-linear terms. But that's what the summer is for and I'm here to learn!
 
 ## Overview
-Overall, the project workflow summarised to the following diagram:
+Overall, the project workflow can be summarised into the following diagram:
 
 ```mermaid
 flowchart TD
@@ -40,10 +40,6 @@ flowchart TD
     H -- Yes --> I[Gather experimental data of a freely swinging pendulum];
     I --> A_sub;
 ```
-
-
-## Simulation
-I decided to use Python's [sympy](https://www.sympy.org/en/index.html) and [scipy](https://scipy.org/) modules to derive and simulate the model of the system rather than MATLAB since I would lose access MATLAB once I graduate. 
 
 ## Demonstration
 
