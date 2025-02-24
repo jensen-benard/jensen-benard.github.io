@@ -22,24 +22,7 @@ However, despite eventually finding suitable gains as a group, I felt I didn't u
 ## Overview
 Overall, the project workflow can be summarised into the following diagram:
 
-```mermaid
-flowchart TD
-    A[Derive model] --> A_sub[Test model with experimental data];
-    A_sub --> B_sub@{ shape: diamond, label: "Reasonably Accurate?" }; 
-    B_sub -- No --> B_sub_feed[Adjust model paramters];
-    B_sub_feed --> A_sub;
-    B_sub -- Yes --> B[Simulate model and find gains]; 
-    B --> C[Implement control Loop with gains]; 
-    C --> D[Test control loop with hardware];
-    D --> E@{ shape: diamond, label: "Stable?" };
-    E -- No --> B;
-    E -- Yes --> F[Success!];
-    G[Build hardware prototype] --> H@{ shape: diamond, label: "Looks like it could work?" };
-    H -- No --> G;
-    H -- Yes --> D;
-    H -- Yes --> I[Gather experimental data of a freely swinging pendulum];
-    I --> A_sub;
-```
+![workflow diagram](/rotary-inverted-pendulum/workflow-diagram.png)
 
 ## Demonstration
 
