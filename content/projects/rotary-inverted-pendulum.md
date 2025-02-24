@@ -1,6 +1,6 @@
 +++
 date = '2025-02-24T13:15:05+13:00'
-draft = true
+draft = false
 title = 'Rotary Inverted Pendulum'
 layout = 'portfolio'
 +++
