@@ -14,9 +14,8 @@ description : A quality of life web application to quickly search clues from the
     <img style="display: block; margin: auto; width: 50%" src="https://cf.geekdo-images.com/QHJF0yoyIW8WGprJRwbMsQ__imagepage/img/cGSkISpWiM775s8shyPHeR9cLmk=/fit-in/900x600/filters:no_upscale():strip_icc()/pic2235991.jpg"/> 
     <figcaption style="text-align: center">
         The 221B Baker Street board game box. 
-        <br>
         <a href="https://boardgamegeek.com/image/2235991/221b-baker-street-the-master-detective-game" target="_blank">
-        Image Link
+        {{< icon "external_link" >}}
         </a>
     </figcaption>
 </figure>
@@ -29,9 +28,8 @@ Players take turns rolling a die and move around various places to look for clue
     https://cf.geekdo-images.com/m-2IC740v1Y2AncUsRE-pg__imagepage/img/zmBPTKPIQaUjK1CXXtiY-byj-ZA=/fit-in/900x600/filters:no_upscale():strip_icc()/pic2958732.jpg"/> 
     <figcaption style="text-align: center">
         The 221B Baker Street board game box. 
-        <br>
         <a href="https://boardgamegeek.com/image/2958732/221b-baker-street-the-master-detective-game" target="_blank">
-        Image Link
+        {{< icon "external_link" >}}
         </a>
     </figcaption>
 </figure>
@@ -100,8 +98,8 @@ Cluepage: Play panic music
 
 ## Project Resources
 
-<a href="https://github.com/jensen-benard/baker-street-clue-book-web-app" target="_blank"> Web app github repository --></a>
+<a href="https://github.com/jensen-benard/baker-street-clue-book-web-app" target="_blank"> Web app github repository {{< icon "external_link" >}} </a>
 
 
 ## External Links
-<a href="https://boardgamegeek.com/boardgame/1275/221b-baker-street-the-master-detective-game" target="_blank"> About the 221B Baker Street Board game --></a>
+<a href="https://boardgamegeek.com/boardgame/1275/221b-baker-street-the-master-detective-game" target="_blank"> About the 221B Baker Street Board game {{< icon "external_link" >}}</a>
