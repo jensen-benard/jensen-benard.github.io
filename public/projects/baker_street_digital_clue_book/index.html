@@ -231,7 +231,7 @@
     
     
     "mainEntityOfPage": "true",
-    "wordCount": "477"
+    "wordCount": "482"
   }]
   </script>
 
@@ -264,10 +264,6 @@
 
 
 
-
-  
-    
-  
 
 
 
@@ -648,6 +644,37 @@
     
     <header id="single_header" class="mt-5 max-w-prose">
       
+        <ol class="text-sm text-neutral-500 dark:text-neutral-400 print:hidden">
+  
+  
+    
+  
+    
+  
+  <li class="hidden">
+    <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/"
+      ></a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="inline">
+    <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/projects/"
+      >projects</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+  
+  <li class="hidden">
+    <a class="hover:underline decoration-neutral-300 dark:underline-neutral-600" href="/projects/baker_street_digital_clue_book/"
+      >221B Baker Street Digital Clue Book</a
+    ><span class="px-1 text-primary-500">/</span>
+  </li>
+
+</ol>
+
+
+      
       <h1 class="mt-0 text-4xl font-extrabold text-neutral-900 dark:text-neutral">
         221B Baker Street Digital Clue Book
       </h1>
@@ -701,7 +728,7 @@
   <div class="flex flex-row flex-wrap items-center">
     
     
-      <time datetime="2025-11-25T00:00:00&#43;00:00">25 November 2025</time><span class="px-2 text-primary-500">&middot;</span><span>477 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
+      <time datetime="2025-11-25T00:00:00&#43;00:00">25 November 2025</time><span class="px-2 text-primary-500">&middot;</span><span>482 words</span><span class="px-2 text-primary-500">&middot;</span><span title="Reading time">3 mins</span>
     
 
     
@@ -711,6 +738,22 @@
   
 
   
+  
+    <div class="flex flex-row flex-wrap items-center">
+      
+        
+      
+        
+          
+        
+      
+        
+      
+        
+          
+        
+      
+    </div>
   
 
   
@@ -790,6 +833,106 @@
 </details>
 
 
+<script>
+  (function () {
+    'use strict'
+
+    const SCROLL_OFFSET_RATIO = 0.33
+    const TOC_SELECTOR = '#TableOfContents'
+    const ANCHOR_SELECTOR = '.anchor'
+    const TOC_LINK_SELECTOR = 'a[href^="#"]'
+    const NESTED_LIST_SELECTOR = 'li ul'
+    const ACTIVE_CLASS = 'active'
+    let isJumpingToAnchor = false
+
+    function getActiveAnchorId(anchors, offsetRatio) {
+      const threshold = window.scrollY + window.innerHeight * offsetRatio
+      const tocLinks = [...document.querySelectorAll('#TableOfContents a[href^="#"]')]
+      const tocIds = new Set(tocLinks.map(link => link.getAttribute('href').substring(1)))
+
+      if (isJumpingToAnchor) {
+        for (let i = 0; i < anchors.length; i++) {
+          const anchor = anchors[i]
+          if (!tocIds.has(anchor.id)) continue
+          const top = anchor.getBoundingClientRect().top + window.scrollY
+          if (Math.abs(window.scrollY - top) < 100) {
+            return anchor.id
+          }
+        }
+      }
+
+      for (let i = anchors.length - 1; i >= 0; i--) {
+        const top = anchors[i].getBoundingClientRect().top + window.scrollY
+        if (top <= threshold && tocIds.has(anchors[i].id)) {
+          return anchors[i].id
+        }
+      }
+      return anchors.find(anchor => tocIds.has(anchor.id))?.id || ''
+    }
+
+    function updateTOC({ toc, anchors, links, scrollOffset, collapseInactive }) {
+      const activeId = getActiveAnchorId(anchors, scrollOffset)
+      if (!activeId) return
+
+      links.forEach(link => {
+        const isActive = link.getAttribute('href') === `#${activeId}`
+        link.classList.toggle(ACTIVE_CLASS, isActive)
+
+        if (collapseInactive) {
+          const ul = link.closest('li')?.querySelector('ul')
+          if (ul) ul.style.display = isActive ? '' : 'none'
+        }
+      })
+
+      if (collapseInactive) {
+        const activeLink = toc.querySelector(`a[href="#${CSS.escape(activeId)}"]`)
+        let el = activeLink
+        while (el && el !== toc) {
+          if (el.tagName === 'UL') el.style.display = ''
+          if (el.tagName === 'LI') el.querySelector('ul')?.style.setProperty('display', '')
+          el = el.parentElement
+        }
+      }
+    }
+
+    function initTOC() {
+      const toc = document.querySelector(TOC_SELECTOR)
+      if (!toc) return
+
+      const collapseInactive = true
+      const anchors = [...document.querySelectorAll(ANCHOR_SELECTOR)]
+      const links = [...toc.querySelectorAll(TOC_LINK_SELECTOR)]
+
+      if (collapseInactive) {
+        toc.querySelectorAll(NESTED_LIST_SELECTOR).forEach(ul => ul.style.display = 'none')
+      }
+
+      links.forEach(link => {
+        link.addEventListener('click', () => {
+          isJumpingToAnchor = true
+        })
+      })
+
+      const config = {
+        toc,
+        anchors,
+        links,
+        scrollOffset: SCROLL_OFFSET_RATIO,
+        collapseInactive
+      }
+
+      window.addEventListener('scroll', () => updateTOC(config), { passive: true })
+      window.addEventListener('hashchange', () => updateTOC(config), { passive: true })
+
+      updateTOC(config)
+    }
+
+    document.readyState === 'loading'
+      ? document.addEventListener('DOMContentLoaded', initTOC)
+      : initTOC()
+  })()
+</script>
+
 
             
           </div>
@@ -804,6 +947,11 @@
           
 <h2 class="relative group">The problem
     <div id="the-problem" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#the-problem" aria-label="Anchor">#</a>
+    </span>
     
 </h2>
 <p>221B Baker Street is a fun board game.</p>
@@ -846,6 +994,11 @@ Players take turns rolling a die and move around various places to look for clue
 <h2 class="relative group">A quality-of-life improvement
     <div id="a-quality-of-life-improvement" class="anchor"></div>
     
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#a-quality-of-life-improvement" aria-label="Anchor">#</a>
+    </span>
+    
 </h2>
 <video style="display: block; margin: auto" width="40%" controls>
 <source src="clue_book_demo.webm" type="video/webm">
@@ -861,6 +1014,11 @@ Your browser does not support the video tag.
 
 <h2 class="relative group">Logic diagram
     <div id="logic-diagram" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#logic-diagram" aria-label="Anchor">#</a>
+    </span>
     
 </h2>
 <p>The logic flow of web app is simple.</p>
@@ -958,11 +1116,21 @@ Your browser does not support the video tag.
 <h2 class="relative group">Project Resources
     <div id="project-resources" class="anchor"></div>
     
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#project-resources" aria-label="Anchor">#</a>
+    </span>
+    
 </h2>
 <p><a href="https://github.com/jensen-benard/baker-street-clue-book-web-app" target="_blank"> Web app github repository <span class="relative inline-block align-text-bottom icon"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z"/></svg></span> </a></p>
 
 <h2 class="relative group">External Links
     <div id="external-links" class="anchor"></div>
+    
+    <span
+        class="absolute top-0 w-6 transition-opacity opacity-0 -start-6 not-prose group-hover:opacity-100 select-none">
+        <a class="text-primary-300 dark:text-neutral-700 !no-underline" href="#external-links" aria-label="Anchor">#</a>
+    </span>
     
 </h2>
 <p><a href="https://boardgamegeek.com/boardgame/1275/221b-baker-street-the-master-detective-game" target="_blank"> About the 221B Baker Street Board game <span class="relative inline-block align-text-bottom icon"><svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 640 640"><!--!Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M384 64C366.3 64 352 78.3 352 96C352 113.7 366.3 128 384 128L466.7 128L265.3 329.4C252.8 341.9 252.8 362.2 265.3 374.7C277.8 387.2 298.1 387.2 310.6 374.7L512 173.3L512 256C512 273.7 526.3 288 544 288C561.7 288 576 273.7 576 256L576 96C576 78.3 561.7 64 544 64L384 64zM144 160C99.8 160 64 195.8 64 240L64 496C64 540.2 99.8 576 144 576L400 576C444.2 576 480 540.2 480 496L480 416C480 398.3 465.7 384 448 384C430.3 384 416 398.3 416 416L416 496C416 504.8 408.8 512 400 512L144 512C135.2 512 128 504.8 128 496L128 240C128 231.2 135.2 224 144 224L224 224C241.7 224 256 209.7 256 192C256 174.3 241.7 160 224 160L144 160z"/></svg></span></a></p>
