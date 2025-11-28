@@ -1,0 +1,37 @@
+<span class="term">{{ .Inner }}</span>
+
+<style>
+.definition {
+    visibility: hidden;
+    /* width: 120px; */
+    background-color: rgb(var(--color-neutral-500));
+    color: white;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.term {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+    border-bottom: 1px dotted;
+}
+
+
+.term:hover {
+  transform: translateY(-10%);
+}
+
+.term:hover .definition {
+    visibility: visible;
+    opacity: 1;
+}
+</style>

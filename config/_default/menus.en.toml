@@ -22,6 +22,7 @@
 
 [[main]]
     name = "Articles"
+    pageRef = "articles"
     weight = 30
 
 
