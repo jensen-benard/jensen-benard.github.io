@@ -21,15 +21,5 @@
       
     </item>
     
-    <item>
-      <title>Project Showcase</title>
-      <link>http://localhost:1313/categories/project-showcase/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
-      <guid>http://localhost:1313/categories/project-showcase/</guid>
-      <description></description>
-      
-    </item>
-    
   </channel>
 </rss>
