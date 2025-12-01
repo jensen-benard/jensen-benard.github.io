@@ -2,6 +2,8 @@
 title : 221B Baker Street Digital Clue Book
 type : project
 date: 2025-11-25
+categories: ["showcase"]
+tags: ["web app", "Javascript", "CSS", "HTML", "quality-of-life"]
 draft : false
 description : A quality of life web application to quickly search clues from the 221B Baker Street board game by Gibsons Games.
 ---

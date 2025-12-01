@@ -1,7 +1,8 @@
 ---
 title: 2D diffusion with a Monte Carlo method
-date: 2025-11-25
+date: 2025-11-29
 type: article
+tags: ["Monte Carlo", "random walk", "diffusion", "calculus", "simulation", "theory"]
 description: Exploring why a Monte Carlo method apporximates ideal 2D diffusion.
 draft: false
 ---

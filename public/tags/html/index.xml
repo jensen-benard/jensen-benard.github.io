@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>HTML on Jensen Benard | Portfolio</title>
+    <link>http://localhost:1313/tags/html/</link>
+    <description>Recent content in HTML on Jensen Benard | Portfolio</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <managingEditor>jensen.benard@protonmail.com (Jensen Benard)</managingEditor>
+    <webMaster>jensen.benard@protonmail.com (Jensen Benard)</webMaster>
+    <copyright>© 2025 Jensen Benard</copyright>
+    <lastBuildDate>Tue, 25 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/html/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>221B Baker Street Digital Clue Book</title>
+      <link>http://localhost:1313/projects/baker_street_digital_clue_book/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/projects/baker_street_digital_clue_book/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/baker_street_digital_clue_book/featured.png" />
+    </item>
+    
+  </channel>
+</rss>

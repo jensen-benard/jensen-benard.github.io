@@ -9,7 +9,17 @@
     <managingEditor>jensen.benard@protonmail.com (Jensen Benard)</managingEditor>
     <webMaster>jensen.benard@protonmail.com (Jensen Benard)</webMaster>
     <copyright>© 2025 Jensen Benard</copyright>
-    <lastBuildDate>Tue, 25 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 30 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/projects/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>A custom rotary inverted pendulum</title>
+      <link>http://localhost:1313/projects/rotary_inverted_pendulum/</link>
+      <pubDate>Sun, 30 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/projects/rotary_inverted_pendulum/</guid>
+      <description></description>
+      <media:content xmlns:media="http://search.yahoo.com/mrss/" url="http://localhost:1313/projects/rotary_inverted_pendulum/featured.jpg" />
+    </item>
     
     <item>
       <title>221B Baker Street Digital Clue Book</title>

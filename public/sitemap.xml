@@ -4,30 +4,36 @@
 
   <url>
     <loc>http://localhost:1313/</loc>
-    <lastmod>2025-11-25T00:00:00+00:00</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.5</priority>
-  </url>
-  <url>
-    <loc>http://localhost:1313/articles/</loc>
-    <lastmod>2025-11-25T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/projects/</loc>
-    <lastmod>2025-11-25T00:00:00+00:00</lastmod>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>http://localhost:1313/projects/baker_street_digital_clue_book/</loc>
-    <lastmod>2025-11-25T00:00:00+00:00</lastmod>
+    <loc>http://localhost:1313/projects/rotary_inverted_pendulum/</loc>
+    <lastmod>2025-11-30T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/articles/</loc>
+    <lastmod>2025-11-29T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>http://localhost:1313/articles/monte_carlo_diffusion/</loc>
+    <lastmod>2025-11-29T00:00:00+00:00</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.5</priority>
+  </url>
+  <url>
+    <loc>http://localhost:1313/projects/baker_street_digital_clue_book/</loc>
     <lastmod>2025-11-25T00:00:00+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>

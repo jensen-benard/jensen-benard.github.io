@@ -9,7 +9,217 @@
     <managingEditor>jensen.benard@protonmail.com (Jensen Benard)</managingEditor>
     <webMaster>jensen.benard@protonmail.com (Jensen Benard)</webMaster>
     <copyright>© 2025 Jensen Benard</copyright>
-    <atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Nov 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Arduino</title>
+      <link>http://localhost:1313/tags/arduino/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/arduino/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>C&#43;&#43;</title>
+      <link>http://localhost:1313/tags/c&#43;&#43;/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/c&#43;&#43;/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Calculus</title>
+      <link>http://localhost:1313/tags/calculus/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/calculus/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Control Systems</title>
+      <link>http://localhost:1313/tags/control-systems/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/control-systems/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Diffusion</title>
+      <link>http://localhost:1313/tags/diffusion/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/diffusion/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Embedded Systems</title>
+      <link>http://localhost:1313/tags/embedded-systems/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/embedded-systems/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>LQR</title>
+      <link>http://localhost:1313/tags/lqr/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/lqr/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Mathematical Modelling</title>
+      <link>http://localhost:1313/tags/mathematical-modelling/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/mathematical-modelling/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Monte Carlo</title>
+      <link>http://localhost:1313/tags/monte-carlo/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/monte-carlo/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Practical</title>
+      <link>http://localhost:1313/tags/practical/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/practical/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Python</title>
+      <link>http://localhost:1313/tags/python/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/python/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Random Walk</title>
+      <link>http://localhost:1313/tags/random-walk/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/random-walk/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Simulation</title>
+      <link>http://localhost:1313/tags/simulation/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/simulation/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Stability</title>
+      <link>http://localhost:1313/tags/stability/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/stability/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Stepper Motor</title>
+      <link>http://localhost:1313/tags/stepper-motor/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/stepper-motor/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Theory</title>
+      <link>http://localhost:1313/tags/theory/</link>
+      <pubDate>Sat, 29 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/theory/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>CSS</title>
+      <link>http://localhost:1313/tags/css/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/css/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>HTML</title>
+      <link>http://localhost:1313/tags/html/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/html/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Javascript</title>
+      <link>http://localhost:1313/tags/javascript/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/javascript/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Quality-of-Life</title>
+      <link>http://localhost:1313/tags/quality-of-life/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/quality-of-life/</guid>
+      <description></description>
+      
+    </item>
+    
+    <item>
+      <title>Web App</title>
+      <link>http://localhost:1313/tags/web-app/</link>
+      <pubDate>Tue, 25 Nov 2025 00:00:00 +0000</pubDate>
+      <author>jensen.benard@protonmail.com (Jensen Benard)</author>
+      <guid>http://localhost:1313/tags/web-app/</guid>
+      <description></description>
+      
+    </item>
     
   </channel>
 </rss>
